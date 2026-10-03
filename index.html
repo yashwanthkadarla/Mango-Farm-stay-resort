@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mango Farm Stay Resort, Hanamkonda | Farm stay, weddings & events near Warangal</title>
+<meta name="description" content="Stay among mango trees at Mango Farm Stay Resort near Inavolu Temple, Hanamkonda. AC rooms, swimming pool, pet friendly, and an open-air lawn for weddings, haldi and sangeet up to 550 guests.">
+<meta name="theme-color" content="#0E2C21">
+<meta property="og:title" content="Mango Farm Stay Resort, Hanamkonda">
+<meta property="og:description" content="Farm stay, pool and open-air lawn for weddings and events near Warangal.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Resort",
+  "name": "Mango Farm Stay Resort",
+  "telephone": "+91 79937 56362",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "H.No 1-149, Udathagudem Road, Nandanam, Near Inavolu Temple",
+    "addressLocality": "Hanamkonda",
+    "addressRegion": "Telangana",
+    "postalCode": "506001",
+    "addressCountry": "IN"
+  },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.5", "reviewCount": "296" },
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Swimming pool", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Pets allowed", "value": true }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --forest:#0E2C21; --leaf:#1F5A3F; --mint:#E3EEDF; --mango:#FFB800; --sun:#FF8A1F;
+  --ink:#12241C; --paper:#F6F8F2; --muted:#5B6B62; --line:#D5DFD2; --r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:'Instrument Sans',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Bricolage Grotesque','Instrument Sans',sans-serif;line-height:1.02;letter-spacing:-.025em;font-weight:700}
+h2{font-size:clamp(2rem,4.6vw,3.4rem)}
+h3{font-size:1.5rem;letter-spacing:-.015em}
+p{max-width:62ch}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(1200px,100% - 2.5rem);margin-inline:auto}
+:focus-visible{outline:3px solid var(--mango);outline-offset:3px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:0;cursor:pointer;font:600 1rem 'Instrument Sans',sans-serif;padding:.85rem 1.4rem;border-radius:999px;text-decoration:none;transition:transform .15s,background .2s,box-shadow .2s;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn-mango{background:var(--mango);color:var(--forest)}
+.btn-mango:hover{background:#FFC93D;box-shadow:0 8px 24px -8px rgba(255,184,0,.7)}
+.btn-dark{background:var(--forest);color:#fff}
+.btn-dark:hover{background:var(--leaf)}
+.btn-line{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+.btn-wa{background:#25D366;color:#06260f}
+.btn-wa:hover{background:#3FE07D}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Photo slots: shows placeholder art until the real photo exists */
+.ph{position:relative;overflow:hidden;background:linear-gradient(165deg,var(--a,#F7B733),var(--b,#1F5A3F))}
+.ph::before{content:"";position:absolute;left:0;right:0;bottom:0;height:58%;opacity:.55;z-index:0;
+  background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 100'><rect x='57' y='55' width='6' height='45' fill='%230A241A'/><circle cx='60' cy='38' r='26' fill='%230A241A'/><circle cx='38' cy='50' r='18' fill='%230A241A'/><circle cx='82' cy='50' r='18' fill='%230A241A'/><ellipse cx='48' cy='44' rx='3' ry='4' fill='%23FFB800'/><ellipse cx='72' cy='36' rx='3' ry='4' fill='%23FFB800'/><ellipse cx='62' cy='54' rx='3' ry='4' fill='%23FF8A1F'/></svg>") repeat-x bottom/auto 100%}
+.ph::after{content:"Add photo: " attr(data-ph);position:absolute;top:12px;right:12px;z-index:0;font-size:11px;font-weight:500;color:#fff;background:rgba(0,0,0,.38);padding:4px 10px;border-radius:99px}
+.ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+
+/* Header */
+.top{position:fixed;inset:0 0 auto 0;z-index:50}
+.demo-bar{background:var(--mango);color:var(--forest);font-size:.82rem;font-weight:600;text-align:center;padding:.4rem 2.5rem;position:relative}
+.demo-bar button{position:absolute;right:.6rem;top:50%;transform:translateY(-50%);background:none;border:0;font-size:1.1rem;cursor:pointer;color:inherit;padding:.2rem .5rem}
+.nav{transition:background .25s,box-shadow .25s}
+.nav.solid{background:rgba(14,44,33,.94);backdrop-filter:blur(10px);box-shadow:0 6px 24px -12px rgba(0,0,0,.5)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;color:#fff}
+.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;font:700 1.2rem 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em}
+.logo-mark{width:34px;height:34px;border-radius:50% 50% 50% 8px;background:var(--mango);display:grid;place-items:center;font-size:1.1rem;transform:rotate(-8deg)}
+.links{display:flex;gap:1.6rem;font-size:.95rem;font-weight:500}
+.links a{text-decoration:none;opacity:.88}
+.links a:hover{opacity:1;color:var(--mango)}
+.nav .btn{padding:.6rem 1.1rem;font-size:.92rem}
+
+/* Hero */
+.hero{--a:#F9C03A;--b:#0E2C21;min-height:100svh;display:flex;color:#fff;background:linear-gradient(180deg,#F7B733 0%,#F0792B 30%,#2A6B49 68%,#0E2C21 100%)}
+.hero-shade{position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(8,26,19,.88) 8%,rgba(8,26,19,.25) 55%,rgba(8,26,19,.35))}
+.hero::after{top:auto;bottom:12px;right:12px}
+.hero-in{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;padding:9rem 0 2.2rem;gap:1.6rem}
+.hero h1{font-size:clamp(3rem,9.5vw,8rem);font-weight:800;line-height:.92;letter-spacing:-.04em;max-width:11ch;animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.hero .sub{font-size:clamp(1.05rem,1.8vw,1.3rem);max-width:46ch;opacity:.92;animation:rise .9s .12s cubic-bezier(.2,.8,.2,1) both}
+.hero .sub strong{color:var(--mango)}
+.hero-cta{display:flex;gap:.8rem;flex-wrap:wrap;animation:rise .9s .22s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+
+/* Booking dock */
+.dock{background:#fff;color:var(--ink);border-radius:28px;padding:1rem;box-shadow:0 30px 60px -20px rgba(0,0,0,.55);animation:rise .9s .34s cubic-bezier(.2,.8,.2,1) both}
+.tabs{display:inline-flex;background:var(--mint);border-radius:999px;padding:4px;margin:0 0 .9rem .3rem}
+.tabs button{border:0;background:none;font:600 .95rem 'Instrument Sans',sans-serif;padding:.55rem 1.3rem;border-radius:999px;cursor:pointer;color:var(--muted)}
+.tabs button[aria-selected=true]{background:var(--forest);color:#fff}
+.dock-grid{display:grid;grid-template-columns:1fr 1fr 1.7fr 1fr auto;gap:.7rem;align-items:end}
+.dock-grid.ev{grid-template-columns:repeat(3,1fr) auto}
+.field{display:flex;flex-direction:column;gap:.25rem;min-width:0}
+.field label{font-size:.78rem;font-weight:600;color:var(--muted);padding-left:.2rem}
+.field select{text-overflow:ellipsis;padding-right:2rem}
+.field input,.field select,.field textarea{font:500 1rem 'Instrument Sans',sans-serif;color:var(--ink);background:var(--paper);border:1.5px solid transparent;border-radius:14px;padding:.75rem .9rem;width:100%;transition:border-color .2s,background .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--leaf);background:#fff}
+.stepper{display:flex;align-items:center;background:var(--paper);border-radius:14px;justify-content:space-between;padding:.3rem}
+.stepper button{width:38px;height:38px;border-radius:10px;border:0;background:#fff;font-size:1.2rem;cursor:pointer;color:var(--forest);font-weight:700}
+.stepper output{font-weight:600}
+.dock-foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:.9rem;padding:.8rem .5rem .1rem;border-top:1px dashed var(--line)}
+.total{display:flex;gap:1.6rem;flex-wrap:wrap}
+.total div{display:flex;flex-direction:column;line-height:1.2}
+.total small{font-size:.76rem;color:var(--muted);font-weight:500}
+.total b{font:700 1.45rem 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em}
+.total .adv b{color:var(--leaf)}
+.dock-actions{display:flex;gap:.6rem;flex-wrap:wrap}
+[hidden]{display:none!important}
+
+/* Sections */
+section{padding:clamp(4rem,9vw,7.5rem) 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:2.6rem}
+.head p{color:var(--muted);font-size:1.05rem}
+
+/* Highlights */
+.hl{padding:2.4rem 0;background:var(--forest);color:#fff}
+.hl-row{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.hl-item{display:flex;align-items:center;gap:.8rem}
+.hl-item svg{width:34px;height:34px;flex:none;stroke:var(--mango);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.hl-item b{display:block;font-weight:600;line-height:1.2}
+.hl-item span{font-size:.85rem;opacity:.7}
+
+/* Rooms */
+.rooms{display:grid;grid-template-columns:repeat(12,1fr);gap:1.3rem}
+.room{background:#fff;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;grid-column:span 5;box-shadow:0 1px 0 var(--line)}
+.room:first-child{grid-column:span 7;grid-row:span 2}
+.room .ph{flex:1;min-height:240px}
+.room:first-child .ph{min-height:420px}
+.room-body{padding:1.4rem 1.5rem 1.5rem;display:flex;flex-direction:column;gap:.7rem}
+.room-body p{color:var(--muted);font-size:.97rem}
+.tags{display:flex;gap:.4rem;flex-wrap:wrap}
+.tags span{font-size:.78rem;font-weight:600;background:var(--mint);color:var(--leaf);padding:.2rem .65rem;border-radius:99px}
+.room-foot{display:flex;justify-content:space-between;align-items:center;margin-top:.3rem;gap:1rem}
+.price b{font:700 1.5rem 'Bricolage Grotesque',sans-serif}
+.price small{color:var(--muted)}
+
+/* Celebrate */
+.cel{background:var(--forest);color:#fff}
+.cel-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.cel-list{display:flex;flex-direction:column;align-items:flex-start;gap:.3rem;margin-top:2rem}
+.cel-list button{background:none;border:0;cursor:pointer;color:rgba(255,255,255,.34);font:700 clamp(1.9rem,4.4vw,3.4rem)/1.1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;text-align:left;padding:.15rem 0;transition:color .25s,transform .25s}
+.cel-list button:hover{color:rgba(255,255,255,.7)}
+.cel-list button[aria-selected=true]{color:#fff;transform:translateX(10px)}
+.cel-list button[aria-selected=true]::before{content:"";display:inline-block;width:.5em;height:.5em;border-radius:50% 50% 50% 15%;background:var(--mango);margin-right:.35em;transform:rotate(-10deg)}
+.cel-panel .ph{aspect-ratio:4/3;border-radius:var(--r)}
+.cel-panel p{margin:1.3rem 0 1rem;opacity:.85;font-size:1.05rem}
+.facts{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.facts span{background:rgba(255,255,255,.1);padding:.35rem .85rem;border-radius:99px;font-size:.88rem;font-weight:500}
+
+/* Gallery */
+.car{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;cursor:grab;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:.2rem}
+.car::-webkit-scrollbar{display:none}
+.tile{flex:0 0 calc((100% - 2rem)/3);aspect-ratio:4/5;scroll-snap-align:start;scroll-snap-stop:always;border:0;padding:0;cursor:zoom-in;border-radius:22px;overflow:hidden}
+.car-ctl{display:flex;justify-content:space-between;align-items:center;margin-top:1.3rem;gap:1rem}
+.dots{display:flex;gap:.45rem;flex-wrap:wrap}
+.dots button{width:9px;height:9px;border-radius:99px;border:0;background:var(--line);cursor:pointer;padding:0;transition:width .25s,background .25s}
+.dots button.on{width:26px;background:var(--leaf)}
+.arrows{display:flex;gap:.5rem}
+.arrows button{width:46px;height:46px;border-radius:50%;border:0;background:var(--forest);color:#fff;font-size:1.2rem;cursor:pointer}
+.arrows button:hover{background:var(--leaf)}
+
+/* Reviews */
+.rev{background:var(--mint)}
+.rev-in{display:grid;grid-template-columns:auto 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.score{font:800 clamp(5rem,13vw,10rem)/.85 'Bricolage Grotesque',sans-serif;letter-spacing:-.06em;color:var(--forest)}
+.stars{color:var(--sun);font-size:1.5rem;letter-spacing:.15em}
+.rev-txt p{color:var(--muted);margin:.6rem 0 1.4rem}
+.rev-txt .row{display:flex;gap:.7rem;flex-wrap:wrap}
+
+/* Find us */
+.find{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:stretch}
+.info{display:flex;flex-direction:column;gap:1.3rem}
+.info dl{display:grid;gap:1rem}
+.info dt{font-size:.8rem;font-weight:600;color:var(--muted)}
+.info dd{font-size:1.05rem;font-weight:500}
+.map{border-radius:var(--r);overflow:hidden;min-height:380px;background:var(--mint)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0}
+
+/* FAQ */
+.faq{background:#fff}
+.faq-in{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(2rem,5vw,5rem)}
+details{border-bottom:1.5px solid var(--line);padding:1.1rem 0}
+summary{cursor:pointer;font:600 1.12rem 'Instrument Sans',sans-serif;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--leaf);transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:.7rem}
+
+/* Contact */
+.contact{background:var(--paper)}
+.contact-in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.contact-in .big{display:flex;flex-direction:column;gap:.4rem;margin-top:1.6rem}
+.contact-in .big a{font:700 clamp(1.5rem,3vw,2.2rem) 'Bricolage Grotesque',sans-serif;text-decoration:none;letter-spacing:-.02em}
+.contact-in .big a:hover{color:var(--leaf)}
+.card{background:#fff;border-radius:var(--r);padding:1.6rem;box-shadow:0 20px 50px -30px rgba(14,44,33,.45);display:grid;gap:1rem}
+.card .two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.card .field input,.card .field select,.card .field textarea{background:var(--paper)}
+.note{font-size:.85rem;color:var(--muted)}
+.ok{background:var(--mint);color:var(--forest);border-radius:14px;padding:.9rem 1rem;font-weight:500}
+
+footer{background:var(--forest);color:#fff;padding:3rem 0 6rem}
+.foot{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:flex-start}
+.foot p{opacity:.7;font-size:.92rem}
+.foot nav{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.95rem}
+.foot nav a{text-decoration:none;opacity:.85}
+.foot nav a:hover{color:var(--mango)}
+
+/* Mobile bar */
+.mbar{display:none}
+
+/* Lightbox + payment dialogs */
+dialog{border:0;border-radius:26px;padding:0;max-width:min(520px,calc(100% - 1.5rem));width:100%;margin:auto;box-shadow:0 40px 90px -20px rgba(0,0,0,.6)}
+dialog::backdrop{background:rgba(8,26,19,.7);backdrop-filter:blur(4px)}
+.pay{padding:1.6rem;display:grid;gap:1.1rem}
+.pay-head{display:flex;justify-content:space-between;align-items:start;gap:1rem}
+.x{border:0;background:var(--paper);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1.1rem}
+.sum{background:var(--paper);border-radius:16px;padding:1rem;display:grid;gap:.45rem;font-size:.95rem}
+.sum div{display:flex;justify-content:space-between;gap:1rem}
+.sum .t{font-weight:700;border-top:1px dashed var(--line);padding-top:.5rem;margin-top:.2rem;font-size:1.05rem}
+.methods{display:flex;gap:.5rem;flex-wrap:wrap}
+.methods span{font-size:.8rem;font-weight:600;background:var(--mint);color:var(--leaf);padding:.25rem .7rem;border-radius:99px}
+.spin{width:44px;height:44px;border-radius:50%;border:4px solid var(--mint);border-top-color:var(--leaf);animation:sp .8s linear infinite;margin:1.5rem auto}
+@keyframes sp{to{transform:rotate(360deg)}}
+.done{text-align:center;display:grid;gap:.9rem;justify-items:center;padding:.5rem 0}
+.tick{width:68px;height:68px;border-radius:50%;background:var(--mango);display:grid;place-items:center;font-size:2rem;animation:pop .45s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pop{from{transform:scale(.3);opacity:0}to{transform:none;opacity:1}}
+.lb{background:transparent;box-shadow:none;max-width:min(1000px,calc(100% - 1.5rem))}
+.lb .ph{aspect-ratio:3/2;border-radius:22px}
+.lb .x{position:absolute;right:12px;top:12px;z-index:3;background:#fff}
+
+@media (max-width:980px){
+  .links{display:none}
+  .dock-grid,.dock-grid.ev{grid-template-columns:1fr 1fr}
+  .dock-grid .go{grid-column:1/-1}
+  .dock-grid .field.room{grid-column:1/-1}
+  .hl-row{grid-template-columns:repeat(2,1fr)}
+  .rooms{grid-template-columns:1fr}
+  .room,.room:first-child{grid-column:auto;grid-row:auto}
+  .room:first-child .ph{min-height:300px}
+  .cel-grid,.find,.faq-in,.contact-in{grid-template-columns:1fr}
+  .tile{flex-basis:calc((100% - 1rem)/2)}
+  .rev-in{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+  .demo-bar{font-size:.72rem;padding:.35rem 2rem}
+  .hero-in{padding-top:8rem}
+  .tile{flex-basis:84%}
+  .arrows{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:.5rem;position:fixed;inset:auto 0 0 0;z-index:40;padding:.6rem .8rem calc(.6rem + env(safe-area-inset-bottom,0px));background:rgba(14,44,33,.96);backdrop-filter:blur(10px)}
+  .mbar .btn{padding:.7rem .4rem;font-size:.9rem}
+  .nav .btn{display:none}
+  .card .two{grid-template-columns:1fr}
+  .dock-actions{width:100%}
+  .dock-actions .btn{flex:1}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Hidden forms so Netlify detects them (booking + enquiry notifications go to your email) -->
+<form name="booking" data-netlify="true" hidden>
+  <input name="name"><input name="phone"><input name="room"><input name="checkin"><input name="checkout">
+  <input name="guests"><input name="advance_paid"><input name="payment_ref"><input name="status">
+</form>
+
+<div class="top">
+  <div class="demo-bar" id="demoBar">Demo preview: photos, prices and policies are placeholders, and payments run in demo mode.
+    <button type="button" aria-label="Dismiss" onclick="document.getElementById('demoBar').remove()">✕</button>
+  </div>
+  <div class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="logo" href="#top"><span class="logo-mark">🥭</span>Mango Farm Stay Resort</a>
+      <nav class="links" aria-label="Main">
+        <a href="#stay">Stay</a><a href="#celebrate">Celebrate</a><a href="#gallery">Gallery</a>
+        <a href="#find">Find us</a><a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-mango" href="#book" data-go="stay">Book now</a>
+    </div>
+  </div>
+</div>
+
+<header class="hero ph" id="top" data-ph="images/hero.jpg">
+  <img src="images/hero.jpg" alt="Mango Farm Stay Resort among mango trees" onerror="this.remove()">
+  <div class="hero-shade"></div>
+  <div class="wrap hero-in">
+    <h1>Sleep under the mango trees.</h1>
+    <p class="sub">A quiet farm resort near Inavolu Temple, Hanamkonda. Pool, AC rooms, and an open lawn for <strong>up to 550 guests</strong>.</p>
+    <div class="hero-cta">
+      <a class="btn btn-mango" href="#book" data-go="stay">Check dates and book</a>
+      <a class="btn btn-line" href="#celebrate">Plan an event</a>
+    </div>
+
+    <!-- Booking dock -->
+    <div class="dock" id="book">
+      <div class="tabs" role="tablist" aria-label="Booking type">
+        <button role="tab" id="tab-stay" aria-selected="true" aria-controls="p-stay">Stay</button>
+        <button role="tab" id="tab-event" aria-selected="false" aria-controls="p-event">Event</button>
+      </div>
+
+      <div id="p-stay" role="tabpanel" aria-labelledby="tab-stay">
+        <div class="dock-grid">
+          <div class="field"><label for="ci">Check-in</label><input type="date" id="ci"></div>
+          <div class="field"><label for="co">Check-out</label><input type="date" id="co"></div>
+          <div class="field room"><label for="room">Room</label><select id="room"></select></div>
+          <div class="field"><label id="gl">Guests</label>
+            <div class="stepper" aria-labelledby="gl">
+              <button type="button" id="gm" aria-label="Fewer guests">−</button>
+              <output id="gv">2</output>
+              <button type="button" id="gp" aria-label="More guests">+</button>
+            </div>
+          </div>
+          <div class="go"></div>
+        </div>
+        <div class="dock-foot">
+          <div class="total">
+            <div><small id="nightsLbl">1 night</small><b id="total">₹0</b></div>
+            <div class="adv"><small id="advLbl">Pay now to confirm</small><b id="adv">₹0</b></div>
+          </div>
+          <div class="dock-actions">
+            <button class="btn btn-wa" id="askWa" type="button">WhatsApp us</button>
+            <button class="btn btn-dark" id="payBtn" type="button">Pay advance and book</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="p-event" role="tabpanel" aria-labelledby="tab-event" hidden>
+        <div class="dock-grid ev">
+          <div class="field"><label for="ed">Event date</label><input type="date" id="ed"></div>
+          <div class="field"><label for="et">Event type</label>
+            <select id="et"><option>Wedding</option><option>Haldi / Mehendi</option><option>Sangeet / Party</option><option>Birthday</option><option>Corporate retreat</option></select></div>
+          <div class="field"><label for="eg">Guests</label><input type="number" id="eg" min="10" max="550" value="200"></div>
+          <div class="go"><button class="btn btn-wa" id="quoteBtn" type="button">Get a quote on WhatsApp</button></div>
+        </div>
+        <div class="dock-foot"><span class="note">We reply with availability and a quote. Lawn holds up to 350 seated or 550 standing.</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Highlights -->
+<div class="hl">
+  <div class="wrap hl-row">
+    <div class="hl-item"><svg viewBox="0 0 24 24"><path d="M3 18c2 0 2 1.5 4.5 1.5S10 18 12 18s2 1.5 4.5 1.5S19 18 21 18M3 13c2 0 2 1.5 4.5 1.5S10 13 12 13s2 1.5 4.5 1.5S19 13 21 13M8 11V5.5a2 2 0 0 1 4 0M14 11V5.5a2 2 0 0 1 4 0"/></svg><div><b>Swimming pool</b><span>Open to stay guests</span></div></div>
+    <div class="hl-item"><svg viewBox="0 0 24 24"><path d="M12 2v20M4.2 7l15.6 10M4.2 17L19.8 7M9 3.5l3 2 3-2M9 20.5l3-2 3 2"/></svg><div><b>AC rooms</b><span>Cool, quiet, private</span></div></div>
+    <div class="hl-item"><svg viewBox="0 0 24 24"><path d="M5 16v-5l2-5h10l2 5v5M3 16h18M7.5 19.5V16M16.5 19.5V16M7 12.5h.01M17 12.5h.01"/></svg><div><b>Parking</b><span>300 cars, 350 bikes</span></div></div>
+    <div class="hl-item"><svg viewBox="0 0 24 24"><circle cx="6" cy="11" r="2"/><circle cx="10" cy="6.5" r="2"/><circle cx="15" cy="6.5" r="2"/><circle cx="19" cy="11" r="2"/><path d="M12.5 12c-3 0-5.5 3-5.5 5.5 0 2 2 2.5 3.5 2 1.2-.4 2-.6 2-.6s.8.2 2 .6c1.5.5 3.5 0 3.5-2 0-2.500-2.500-5.500-5.500-5.500z"/></svg><div><b>Pet friendly</b><span>Bring your dog</span></div></div>
+    <div class="hl-item"><svg viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14zM5 19l8-8"/></svg><div><b>Open-air lawn</b><span>350 seated, 550 standing</span></div></div>
+  </div>
+</div>
+
+<!-- Stay -->
+<section id="stay">
+  <div class="wrap">
+    <div class="head">
+      <h2>Three ways to stay</h2>
+      <p>Wake up to birdsong, walk through the orchard, swim before breakfast. Pick the room that suits your group.</p>
+    </div>
+    <div class="rooms" id="rooms"></div>
+  </div>
+</section>
+
+<!-- Celebrate -->
+<section class="cel" id="celebrate">
+  <div class="wrap cel-grid">
+    <div>
+      <h2>Your celebration, outdoors.</h2>
+      <div class="cel-list" id="celList" role="tablist" aria-label="Event types"></div>
+    </div>
+    <div class="cel-panel" id="celPanel" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <h2>A look around</h2>
+      <a class="btn btn-line" href="https://www.instagram.com/mangofarmstayresort" target="_blank" rel="noopener">More on Instagram</a>
+    </div>
+    <div class="car" id="gal" aria-label="Photo gallery. Swipe to see more."></div>
+    <div class="car-ctl">
+      <div class="dots" id="dots"></div>
+      <div class="arrows"><button type="button" id="prev" aria-label="Previous photos">←</button><button type="button" id="next" aria-label="Next photos">→</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="rev">
+  <div class="wrap rev-in">
+    <div><div class="score">4.5</div><div class="stars" aria-hidden="true">★★★★★</div></div>
+    <div class="rev-txt">
+      <h2>Loved by guests across Warangal</h2>
+      <p>Rated 4.5 out of 5 from 296 reviews on Google, and 4.5 on Justdial. Read what guests say about the stay, the staff and the events.</p>
+      <div class="row">
+        <a class="btn btn-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Mango+Farm+Stay+Resort+Hanamkonda">Read Google reviews</a>
+        <a class="btn btn-line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Mango+Farm+Stay+Resort+Hanamkonda">Leave a review</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Find us -->
+<section id="find">
+  <div class="wrap find">
+    <div class="info">
+      <h2>Find us</h2>
+      <dl>
+        <div><dt>Address</dt><dd>H.No 1-149, Udathagudem Road, Nandanam, Near Inavolu Temple, Hanamkonda, Warangal 506001</dd></div>
+        <div><dt>Check-in and check-out</dt><dd>Check-in 12:00 PM. Check-out 10:00 AM.</dd></div>
+        <div><dt>Call to book</dt><dd><a href="tel:+917993756362">+91 79937 56362</a> or <a href="tel:+918374798366">83747 98366</a></dd></div>
+      </dl>
+      <a class="btn btn-dark" style="align-self:flex-start" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Mango+Farm+Stay+Resort+Udathagudem+Road+Hanamkonda">Get directions</a>
+    </div>
+    <div class="map">
+      <iframe title="Map of Mango Farm Stay Resort" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Mango+Farm+Stay+Resort+Udathagudem+Road+Hanamkonda&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap faq-in">
+    <h2>Good to know</h2>
+    <div>
+      <details><summary>What are the check-in and check-out times?</summary><p>Check-in is from 12:00 PM and check-out is by 10:00 AM. Early check-in or late check-out can be arranged if the room is free. Ask when you book.</p></details>
+      <details><summary>Are pets allowed?</summary><p>Yes, pets are welcome. Tell us when you book so we can set you up with the right room.</p></details>
+      <details><summary>How many guests can the lawn hold?</summary><p>Up to 350 guests seated or 550 standing, with parking for 300 cars and 350 bikes.</p></details>
+      <details><summary>Can we bring our own caterer or decorator?</summary><p>Outside caterers and decorators are usually allowed with approval, and in-house catering is available. Confirm details with the team when you enquire.</p></details>
+      <details><summary>How does the advance payment work?</summary><p>Pay a small advance online with UPI, card or netbanking to hold your dates. The balance is paid at the resort. Cancellation terms are shared on your booking confirmation.</p></details>
+      <details><summary>Is the resort suitable for families with children?</summary><p>Yes. There's open lawn space to play and a pool. Children should be supervised near the water.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="wrap contact-in">
+    <div>
+      <h2>Tell us about your plans</h2>
+      <p style="margin-top:1rem;color:var(--muted)">Weddings, a family weekend or a team outing. We reply on WhatsApp or phone, usually within a few hours.</p>
+      <div class="big">
+        <a href="tel:+917993756362">+91 79937 56362</a>
+        <a href="tel:+918374798366">+91 83747 98366</a>
+        <a href="mailto:bookings@example.com" id="mailLink">bookings@example.com</a>
+      </div>
+    </div>
+
+    <form class="card" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="enqForm">
+      <input type="hidden" name="form-name" value="enquiry">
+      <p class="sr"><label>Leave blank <input name="bot-field"></label></p>
+      <div class="two">
+        <div class="field"><label for="n">Your name</label><input id="n" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="p">Phone</label><input id="p" name="phone" type="tel" required inputmode="tel" autocomplete="tel" pattern="[0-9+ ]{10,15}"></div>
+      </div>
+      <div class="two">
+        <div class="field"><label for="k">I'm planning a</label>
+          <select id="k" name="type"><option>Stay</option><option>Wedding</option><option>Haldi / Mehendi</option><option>Sangeet / Party</option><option>Birthday</option><option>Corporate retreat</option></select></div>
+        <div class="field"><label for="d">Date</label><input id="d" name="date" type="date"></div>
+      </div>
+      <div class="field"><label for="m">Message</label><textarea id="m" name="message" rows="3" placeholder="Number of guests, rooms, anything we should know"></textarea></div>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+        <button class="btn btn-dark" type="submit">Send enquiry</button>
+        <button class="btn btn-wa" type="button" id="enqWa">Send on WhatsApp</button>
+      </div>
+      <div class="ok" id="enqOk" hidden></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div><a class="logo" href="#top"><span class="logo-mark">🥭</span>Mango Farm Stay Resort</a>
+      <p style="margin-top:.8rem">Udathagudem Road, near Inavolu Temple, Hanamkonda, Telangana 506001</p></div>
+    <nav aria-label="Footer"><a href="#stay">Stay</a><a href="#celebrate">Celebrate</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a>
+      <a href="https://www.instagram.com/mangofarmstayresort" target="_blank" rel="noopener">Instagram</a></nav>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-line" style="color:#fff" href="tel:+917993756362">Call</a>
+  <a class="btn btn-wa" id="mbarWa" href="#">WhatsApp</a>
+  <a class="btn btn-mango" href="#book" data-go="stay">Book</a>
+</div>
+
+<!-- Payment dialog -->
+<dialog id="payDlg" aria-labelledby="payTitle">
+  <div class="pay" id="payForm">
+    <div class="pay-head"><div><h3 id="payTitle">Confirm your booking</h3><p class="note">Pay a small advance to hold your dates.</p></div>
+      <button class="x" type="button" aria-label="Close" data-close="payDlg">✕</button></div>
+    <div class="sum" id="sum"></div>
+    <div class="field"><label for="pn">Your name</label><input id="pn" autocomplete="name"></div>
+    <div class="field"><label for="pp">Mobile number</label><input id="pp" type="tel" inputmode="tel" autocomplete="tel"></div>
+    <div class="methods"><span>UPI</span><span>Cards</span><span>Netbanking</span><span>Wallets</span></div>
+    <div class="note" id="payErr" style="color:#B3261E" hidden></div>
+    <button class="btn btn-mango" type="button" id="payGo">Pay advance</button>
+    <p class="note" id="payModeNote"></p>
+  </div>
+  <div class="pay" id="payWait" hidden><div class="spin"></div><p style="text-align:center">Processing payment. Please don't close this window.</p></div>
+  <div class="pay" id="payDone" hidden>
+    <div class="done"><div class="tick">✓</div><h3>Booking received</h3><p id="doneTxt"></p>
+      <a class="btn btn-wa" id="doneWa" href="#" target="_blank" rel="noopener">Send confirmation on WhatsApp</a>
+      <button class="btn btn-line" type="button" style="color:var(--ink)" data-close="payDlg">Close</button></div>
+  </div>
+</dialog>
+
+<!-- Lightbox -->
+<dialog class="lb" id="lb" aria-label="Photo">
+  <button class="x" type="button" aria-label="Close" data-close="lb">✕</button>
+  <div class="ph" id="lbBox"></div>
+</dialog>
+
+<script>
+/* =====================================================
+   EDIT HERE: all the business details live in CONFIG
+   ===================================================== */
+const CONFIG = {
+  name: "Mango Farm Stay Resort",
+  whatsapp: "917993756362",            // country code + number, no + or spaces
+  email: "bookings@example.com",       // replace with the resort's real email
+  advancePercent: 30,                  // % of the stay charged online
+  rooms: [
+    { id:"garden",  name:"Garden Villa",     price:4500, a:"#9BD36B", b:"#1F5A3F", photo:"images/room-garden.jpg",
+      desc:"A private AC villa that opens onto the mango orchard. Quiet mornings, a sit-out for chai, and room for a small family.",
+      tags:["AC","Garden view","Sleeps 3"] },
+    { id:"pool",    name:"Pool-view Suite",  price:6500, a:"#5EC6D9", b:"#14503F", photo:"images/room-pool.jpg",
+      desc:"Step from your door to the pool. A larger suite with a pool-facing balcony.",
+      tags:["AC","Pool view","Sleeps 4"] },
+    { id:"cottage", name:"Family Cottage",   price:8500, a:"#FFB800", b:"#7A3B12", photo:"images/room-cottage.jpg",
+      desc:"Two bedrooms and a shared living area for groups travelling together.",
+      tags:["AC","2 bedrooms","Sleeps 6"] }
+  ],
+  events: [
+    { id:"wedding", title:"Weddings", photo:"images/event-wedding.jpg", a:"#FF9F43", b:"#7A1F3D",
+      text:"Say your vows on an open lawn under the trees, with rooms on site for the families and parking for everyone who comes.",
+      facts:["350 seated","550 standing","300 car parking","In-house catering"] },
+    { id:"haldi", title:"Haldi and Mehendi", photo:"images/event-haldi.jpg", a:"#FFD23F", b:"#C2570C",
+      text:"Bright, informal and made for photos. The orchard gives you natural light and colour all day.",
+      facts:["Garden setting","Photo-friendly","Rooms to change","Open-air"] },
+    { id:"sangeet", title:"Sangeet and parties", photo:"images/event-sangeet.jpg", a:"#9B5DE5", b:"#0E2C21",
+      text:"Lights in the trees, a stage on the lawn and room for the whole family to dance.",
+      facts:["Stage space","Evening lighting","Pool area","Outside decor with approval"] },
+    { id:"retreat", title:"Retreats and day outings", photo:"images/event-retreat.jpg", a:"#6BCB77", b:"#0E2C21",
+      text:"A change of scene for teams and friends. Walk the farm, swim, and eat together under the trees.",
+      facts:["Day or overnight","Pool","Open lawn","Pet friendly"] }
+  ],
+  gallery: [   // one line per photo. Add or delete lines to show more or fewer photos.
+    { photo:"images/gallery-1.jpg", a:"#F7B733", b:"#1F5A3F" },
+    { photo:"images/gallery-2.jpg",      a:"#5EC6D9", b:"#14503F" },
+    { photo:"images/gallery-3.jpg",      a:"#FF9F43", b:"#7A1F3D" },
+    { photo:"images/gallery-4.jpg",    a:"#9BD36B", b:"#0E2C21" },
+    { photo:"images/gallery-5.jpg",      a:"#FFD23F", b:"#C2570C" },
+    { photo:"images/gallery-6.jpg",    a:"#6BCB77", b:"#0E2C21" },
+    { photo:"images/gallery-7.jpg",      a:"#9B5DE5", b:"#0E2C21" },
+    { photo:"images/gallery-8.jpg",      a:"#F0792B", b:"#2A6B49" }
+  ],
+  /* ---- Payments ----
+     Demo mode runs while both of these are off. To go live:
+     Option A (quickest): create a Razorpay Payment Link / Page and paste its URL in paymentLink.
+     Option B (full checkout): set razorpay.enabled=true, add keyId, and add
+       RAZORPAY_KEY_ID + RAZORPAY_KEY_SECRET in Netlify environment variables
+       (uses netlify/functions/create-order.js). */
+  paymentLink: "",
+  razorpay: { enabled:false, keyId:"rzp_test_XXXXXXXX" }
+};
+
+/* ---------- helpers ---------- */
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const inr = n => new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(n);
+const fmtDate = s => s ? new Date(s+"T00:00").toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"}) : "";
+const isoDate = d => new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,10);
+const wa = text => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
+const photoSlot = (src, label, a, b, alt="") =>
+  `<div class="ph" data-ph="${src}" style="--a:${a};--b:${b}"><img src="${src}" alt="${alt}" loading="lazy" onerror="this.remove()"></div>`;
+
+$("#mailLink").href = "mailto:" + CONFIG.email; $("#mailLink").textContent = CONFIG.email;
+$("#mbarWa").href = wa("Hi, I'd like to know more about Mango Farm Stay Resort.");
+$("#mbarWa").target = "_blank";
+
+/* ---------- nav ---------- */
+const nav = $("#nav");
+const onScroll = () => nav.classList.toggle("solid", scrollY > 40);
+addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+/* ---------- rooms ---------- */
+$("#rooms").innerHTML = CONFIG.rooms.map(r => `
+  <article class="room">
+    ${photoSlot(r.photo, r.name, r.a, r.b, r.name)}
+    <div class="room-body">
+      <h3>${r.name}</h3>
+      <p>${r.desc}</p>
+      <div class="tags">${r.tags.map(t=>`<span>${t}</span>`).join("")}</div>
+      <div class="room-foot">
+        <div class="price"><b>${inr(r.price)}</b> <small>per night</small></div>
+        <button class="btn btn-dark" type="button" data-room="${r.id}">Book this room</button>
+      </div>
+    </div>
+  </article>`).join("");
+$("#room").innerHTML = CONFIG.rooms.map(r=>`<option value="${r.id}">${r.name} (${inr(r.price)})</option>`).join("");
+
+/* ---------- booking dock ---------- */
+const st = { guests:2 };
+const today = new Date(); const tmr = new Date(today.getTime()+864e5); const t2 = new Date(today.getTime()+2*864e5);
+$("#ci").min = isoDate(today); $("#ci").value = isoDate(tmr); $("#co").value = isoDate(t2); $("#co").min = isoDate(tmr);
+$("#ed").min = isoDate(today);
+
+const roomObj = () => CONFIG.rooms.find(r => r.id === $("#room").value);
+function stayCalc(){
+  const ci = new Date($("#ci").value+"T00:00"), co = new Date($("#co").value+"T00:00");
+  let nights = Math.round((co-ci)/864e5);
+  if (!(nights >= 1)) { // fix check-out
+    const fix = new Date(ci.getTime()+864e5); $("#co").value = isoDate(fix); nights = 1;
+  }
+  $("#co").min = isoDate(new Date(ci.getTime()+864e5));
+  const total = nights * roomObj().price;
+  const adv = Math.round(total * CONFIG.advancePercent / 100);
+  $("#nightsLbl").textContent = `${nights} night${nights>1?"s":""} × ${inr(roomObj().price)}`;
+  $("#total").textContent = inr(total);
+  $("#advLbl").textContent = `Pay now (${CONFIG.advancePercent}%) to confirm`;
+  $("#adv").textContent = inr(adv);
+  return { nights, total, adv };
+}
+["ci","co","room"].forEach(id => $("#"+id).addEventListener("change", stayCalc));
+$("#gm").onclick = () => { st.guests = Math.max(1, st.guests-1); $("#gv").textContent = st.guests; };
+$("#gp").onclick = () => { st.guests = Math.min(12, st.guests+1); $("#gv").textContent = st.guests; };
+stayCalc();
+
+function setTab(which){
+  const stay = which === "stay";
+  $("#tab-stay").setAttribute("aria-selected", stay);
+  $("#tab-event").setAttribute("aria-selected", !stay);
+  $("#p-stay").hidden = !stay; $("#p-event").hidden = stay;
+}
+$("#tab-stay").onclick = () => setTab("stay");
+$("#tab-event").onclick = () => setTab("event");
+$$("[data-go]").forEach(a => a.addEventListener("click", () => setTab(a.dataset.go)));
+$$("[data-room]").forEach(b => b.addEventListener("click", () => {
+  $("#room").value = b.dataset.room; stayCalc(); setTab("stay");
+  $("#book").scrollIntoView({behavior:"smooth", block:"center"});
+}));
+
+$("#askWa").onclick = () => {
+  const c = stayCalc();
+  window.open(wa(`Hi! I'd like to check availability at Mango Farm Stay Resort.\nRoom: ${roomObj().name}\nCheck-in: ${fmtDate($("#ci").value)}\nCheck-out: ${fmtDate($("#co").value)}\nGuests: ${st.guests}\nEstimate: ${inr(c.total)}`), "_blank");
+};
+$("#quoteBtn").onclick = () => {
+  window.open(wa(`Hi! I'm planning a ${$("#et").value} at Mango Farm Stay Resort.\nDate: ${fmtDate($("#ed").value) || "to be decided"}\nGuests: about ${$("#eg").value}\nPlease share availability and a quote.`), "_blank");
+};
+
+/* ---------- celebrate ---------- */
+let evIdx = 0;
+function renderEvent(){
+  const e = CONFIG.events[evIdx];
+  $$("#celList button").forEach((b,i)=>b.setAttribute("aria-selected", i===evIdx));
+  $("#celPanel").innerHTML = `
+    ${photoSlot(e.photo, e.title, e.a, e.b, e.title)}
+    <p>${e.text}</p>
+    <div class="facts">${e.facts.map(f=>`<span>${f}</span>`).join("")}</div>
+    <button class="btn btn-mango" type="button" id="checkDate">Check my date</button>`;
+  $("#checkDate").onclick = () => {
+    setTab("event");
+    const opt = [...$("#et").options].find(o => o.text.toLowerCase().startsWith(e.title.split(" ")[0].toLowerCase()));
+    if (opt) $("#et").value = opt.value;
+    $("#book").scrollIntoView({behavior:"smooth", block:"center"});
+  };
+}
+$("#celList").innerHTML = CONFIG.events.map((e,i)=>`<button role="tab" type="button" data-i="${i}">${e.title}</button>`).join("");
+$$("#celList button").forEach(b => b.onclick = () => { evIdx = +b.dataset.i; renderEvent(); });
+renderEvent();
+
+/* ---------- gallery + lightbox ---------- */
+$("#gal").innerHTML = CONFIG.gallery.map((g,i)=>`
+  <button class="tile ph" type="button" data-ph="${g.photo}" data-i="${i}" style="--a:${g.a};--b:${g.b}" aria-label="Open photo ${i+1}">
+    <img src="${g.photo}" alt="Mango Farm Stay Resort photo ${i+1}" loading="lazy" onerror="this.remove()">
+  </button>`).join("");
+
+/* swipe carousel: dots + arrows */
+const car = $("#gal"), dots = $("#dots");
+const step = () => (car.querySelector(".tile")?.getBoundingClientRect().width || 300) + 16;
+dots.innerHTML = CONFIG.gallery.map((_,i)=>`<button type="button" aria-label="Go to photo ${i+1}" data-d="${i}"></button>`).join("");
+$$("button", dots).forEach(b => b.onclick = () => car.scrollTo({left: +b.dataset.d * step(), behavior:"smooth"}));
+const markDot = () => {
+  const i = Math.round(car.scrollLeft / step());
+  $$("button", dots).forEach((d,k) => d.classList.toggle("on", k === i));
+};
+car.addEventListener("scroll", markDot, {passive:true}); markDot();
+
+/* mouse drag with snap (touch already swipes natively) */
+let drag = null, moved = false;
+car.addEventListener("pointerdown", e => {
+  if (e.pointerType !== "mouse") return;
+  drag = { x:e.clientX, left:car.scrollLeft }; moved = false;
+  car.style.scrollSnapType = "none"; car.style.cursor = "grabbing";
+});
+addEventListener("pointermove", e => {
+  if (!drag) return;
+  const dx = e.clientX - drag.x;
+  if (Math.abs(dx) > 5) moved = true;
+  car.scrollLeft = drag.left - dx;
+});
+addEventListener("pointerup", () => {
+  if (!drag) return;
+  const target = Math.round(car.scrollLeft / step()) * step();
+  drag = null; car.style.cursor = "";
+  car.scrollTo({left:target, behavior:"smooth"});
+  setTimeout(() => { car.style.scrollSnapType = ""; }, 450);
+});
+car.addEventListener("click", e => { if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
+$("#prev").onclick = () => car.scrollBy({left:-step(), behavior:"smooth"});
+$("#next").onclick = () => car.scrollBy({left: step(), behavior:"smooth"});
+$$(".tile").forEach(t => t.onclick = () => {
+  const g = CONFIG.gallery[+t.dataset.i];
+  const box = $("#lbBox");
+  box.dataset.ph = g.photo; box.style.setProperty("--a", g.a); box.style.setProperty("--b", g.b);
+  box.innerHTML = `<img src="${g.photo}" alt="" onerror="this.remove()">`;
+  $("#lb").showModal();
+});
+
+/* ---------- dialogs ---------- */
+$$("[data-close]").forEach(b => b.onclick = () => $("#"+b.dataset.close).close());
+$("#lb").addEventListener("click", e => { if (e.target === $("#lb")) $("#lb").close(); });
+$("#payDlg").addEventListener("click", e => { if (e.target === $("#payDlg")) $("#payDlg").close(); });
+
+/* ---------- payment ---------- */
+let booking = null;
+const liveMode = () => CONFIG.razorpay.enabled || !!CONFIG.paymentLink;
+function showPay(step){ ["payForm","payWait","payDone"].forEach(id => $("#"+id).hidden = id !== step); }
+
+$("#payBtn").onclick = () => {
+  const c = stayCalc();
+  booking = { room: roomObj().name, ci: $("#ci").value, co: $("#co").value, guests: st.guests, nights: c.nights, total: c.total, adv: c.adv };
+  $("#sum").innerHTML = `
+    <div><span>Room</span><b>${booking.room}</b></div>
+    <div><span>Check-in</span><b>${fmtDate(booking.ci)}</b></div>
+    <div><span>Check-out</span><b>${fmtDate(booking.co)}</b></div>
+    <div><span>Guests</span><b>${booking.guests}</b></div>
+    <div><span>Stay total</span><b>${inr(booking.total)}</b></div>
+    <div class="t"><span>Pay now (${CONFIG.advancePercent}%)</span><b>${inr(booking.adv)}</b></div>`;
+  $("#payGo").textContent = `Pay ${inr(booking.adv)}`;
+  $("#payModeNote").textContent = liveMode()
+    ? "Payments are processed securely by Razorpay. The balance is paid at the resort."
+    : "Demo mode: no real money is charged. Live payments are switched on after setup.";
+  $("#payErr").hidden = true; showPay("payForm"); $("#payDlg").showModal();
+};
+
+function finishBooking(ref, status){
+  const name = $("#pn").value.trim(), phone = $("#pp").value.trim();
+  // Email the resort via Netlify Forms (works once deployed)
+  try {
+    if (location.protocol !== "file:") fetch("/", { method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"},
+      body:new URLSearchParams({"form-name":"booking", name, phone, room:booking.room, checkin:booking.ci, checkout:booking.co,
+        guests:booking.guests, advance_paid:booking.adv, payment_ref:ref, status}).toString() }).catch(()=>{});
+  } catch(e){}
+  $("#doneTxt").textContent = `${booking.room}, ${fmtDate(booking.ci)} to ${fmtDate(booking.co)}. Reference ${ref}. We'll confirm on WhatsApp shortly.`;
+  $("#doneWa").href = wa(`Hi, this is ${name}. I've booked ${booking.room} from ${fmtDate(booking.ci)} to ${fmtDate(booking.co)} for ${booking.guests} guest(s). Advance ${inr(booking.adv)} (${status}). Ref ${ref}.`);
+  showPay("payDone");
+}
+
+$("#payGo").onclick = async () => {
+  const name = $("#pn").value.trim(), phone = $("#pp").value.trim();
+  const err = $("#payErr");
+  if (name.length < 2) { err.textContent = "Enter your name."; err.hidden = false; return; }
+  if (!/^\+?[0-9 ]{10,14}$/.test(phone)) { err.textContent = "Enter a valid 10-digit mobile number."; err.hidden = false; return; }
+  err.hidden = true;
+  const ref = "MFS-" + Math.random().toString(36).slice(2,7).toUpperCase();
+
+  if (CONFIG.razorpay.enabled) {
+    try {
+      showPay("payWait");
+      const res = await fetch("/.netlify/functions/create-order", { method:"POST", headers:{"Content-Type":"application/json"},
+        body: JSON.stringify({ amount: booking.adv*100, receipt: ref, notes:{ name, phone, room:booking.room, checkin:booking.ci, checkout:booking.co } }) });
+      const order = await res.json();
+      if (!res.ok || !order.id) throw new Error("order");
+      await new Promise((ok,bad)=>{ if (window.Razorpay) return ok(); const s=document.createElement("script"); s.src="https://checkout.razorpay.com/v1/checkout.js"; s.onload=ok; s.onerror=bad; document.head.appendChild(s); });
+      $("#payDlg").close();
+      new Razorpay({
+        key: CONFIG.razorpay.keyId, amount: order.amount, currency:"INR", order_id: order.id,
+        name: CONFIG.name, description: `Advance for ${booking.room}`, prefill:{ name, contact: phone }, theme:{ color:"#1F5A3F" },
+        handler: r => { $("#payDlg").showModal(); finishBooking(r.razorpay_payment_id, "paid online"); },
+        modal: { ondismiss: () => {} }
+      }).open();
+    } catch(e) {
+      showPay("payForm"); err.textContent = "Payment couldn't start. Please try again or message us on WhatsApp."; err.hidden = false;
+    }
+    return;
+  }
+  if (CONFIG.paymentLink) {
+    finishBooking(ref, "payment link opened");
+    window.open(CONFIG.paymentLink, "_blank");
+    return;
+  }
+  // Demo mode
+  showPay("payWait");
+  setTimeout(() => finishBooking(ref, "DEMO payment"), 1700);
+};
+
+/* ---------- enquiry form ---------- */
+const enq = $("#enqForm");
+enq.addEventListener("submit", async e => {
+  e.preventDefault();
+  const ok = $("#enqOk"); ok.hidden = false;
+  if (location.protocol === "file:") { ok.textContent = "Preview mode: the form sends real emails once the site is live on Netlify."; return; }
+  try {
+    const r = await fetch("/", { method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"}, body:new URLSearchParams(new FormData(enq)).toString() });
+    if (!r.ok) throw 0;
+    ok.textContent = "Thanks! We've received your enquiry and will contact you soon."; enq.reset();
+  } catch(_) { ok.textContent = "Couldn't send. Please use the WhatsApp button or call us."; }
+});
+$("#enqWa").onclick = () => {
+  const f = new FormData(enq);
+  window.open(wa(`Hi! I'm ${f.get("name") || "(name)"}. I'm planning a ${f.get("type")}${f.get("date") ? " on " + fmtDate(f.get("date")) : ""}.\n${f.get("message") || ""}\nPhone: ${f.get("phone") || ""}`), "_blank");
+};
+</script>
+</body>
+</html>
